@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <title>Add Author</title>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html">
+        <h1 class="bookstore-menu">Bookstore <span class="glyphicon glyphicon-book"></span></h1>
+    </a>
+    <hr/>
+    <h3>Add Author</h3>
+    <div class="col-md-12">
+        <form>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="InputAddAuthorName">Name</label>
+                    <input class="form-control" id="InputAddAuthorName" required>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" onclick="createAuthor()">Submit</button>
+                <a href="index.html">
+                    <button type="button" id="cancel-add-auhtor" value="Back" class="btn btn-default">Cancel</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/createAuthor.js"></script>>
+
+</body>
+</html>

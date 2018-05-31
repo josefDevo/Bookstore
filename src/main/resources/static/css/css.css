@@ -1,0 +1,71 @@
+body {
+    padding-bottom: 60px;
+}
+
+.rating {
+    border: none;
+    float: left;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 180px;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 5px;
+    font-size: 2.05em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+    cursor: pointer;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+.rating > input:checked ~ label,
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label { color: #FFD700;  }
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+.choose-rate, .modal-title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.glyphicon-book, .bookstore-menu {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+}
+
+.image-stars-style, .total-rated-text-style {
+    padding-top: 40px;
+}
+
+.stars-total-per-star {
+    position: relative;
+    top: 17px;
+    left: 40px;
+}
+
+.rating-back-button {
+    text-decoration: none;
+    color:black;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.btn {
+    margin: 2px !important;
+}
+.bold {
+font-weight: bold;
+}

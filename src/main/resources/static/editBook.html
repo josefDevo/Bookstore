@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+<div class="container">
+    <a href="index.html">
+        <h1 class="bookstore-menu">Bookstore <span class="glyphicon glyphicon-book"></span></h1>
+    </a>
+    <hr/>
+    <h3>Edit Book</h3>
+    <div class="col-md-12">
+
+        <form>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="InputTitle">Title</label>
+                    <input class="form-control" id="InputTitle" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="InputGenre">Genre</label>
+                    <input class="form-control" id="InputGenre" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="InputPub">Published</label>
+                    <input class="form-control" id="InputPub" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="InputPrice">Price</label>
+                    <input class="form-control" id="InputPrice" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="InputInv">Inventory</label>
+                    <input class="form-control" id="InputInv" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="InputAuthor">Author</label>
+                <select class="form-control form-control-lg" id="InputAuthor">
+
+                </select>
+            </div>
+            <div class="col-md-12">
+                <a href="index.html">
+                <button type="button" class="btn btn-primary" onclick="updateBook()">Submit</button>
+                </a>
+                <a href="index.html">
+                    <button type="button" id="cancel-edit-book" value="Back" class="btn btn-default">Cancel</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/editBook.js"></script>
+
+
+<script>
+
+</script>
+
+
+</body>
+</html>

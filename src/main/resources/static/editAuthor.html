@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <title>Edit Book</title>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html">
+        <h1 class="bookstore-menu">Bookstore <span class="glyphicon glyphicon-book"></span></h1>
+    </a>
+    <hr/>
+    <h3>Edit Author</h3>
+    <div class="col-md-12">
+        <form>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="selectAuthor">Author</label>
+                        <select class="form-control form-control-lg" id="selectAuthor" onchange="updateAuthor()">
+                            <option disabled selected value> Select an author </option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputAuthor">Edit</label>
+                <input class="form-control" id="inputAuthor" required>
+            </div>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" onclick="editAuthor()">Submit</button>
+                <a href="index.html">
+                    <button type="button" id="cancel-add-book" value="Back" class="btn btn-default">Cancel</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--TODO  lägga till  tabell över befintliga författare som går att redigera, dessa ska man kunna kicka på och id nr memoreras sedan kan man ändra namnet.-->
+
+<script src="js/editAuthor.js"></script>>
+
+
+</body>
+</html>
