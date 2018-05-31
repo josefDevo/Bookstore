@@ -1,4 +1,4 @@
-package com.newton.bookstore.entity;
+package com.bookstore.entity;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -6,17 +6,21 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import java.io.Serializable;
 
-
 @Entity
-@Table(name = "Author")
+@Table(name = "Rating")
 @EntityListeners(AuditingEntityListener.class)
-public class Author implements Serializable {
+public class Rating implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @NotBlank
-    private String name;
+    private int star;
+    private int bookId;
+
+
+
+
 
     public int getId() {
         return id;
@@ -26,17 +30,15 @@ public class Author implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public int getStar() { return star; }
+
+    public void setStar(int star) { this.star = star; }
+
+    public int getBookId() {
+        return bookId;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-
-    @Override
-    public String toString() {
-        return  "Author:" + name;
+    public void setBookId(int bookId) {
+        this.bookId = bookId;
     }
 }

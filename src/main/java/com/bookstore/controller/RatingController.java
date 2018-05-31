@@ -1,10 +1,9 @@
-package com.newton.bookstore.controller;
+package com.bookstore.controller;
 
-import com.newton.bookstore.entity.Rating;
-import com.newton.bookstore.repository.RatingRepository;
+import com.bookstore.entity.Rating;
+import com.bookstore.repository.RatingRepository;
 import com.oracle.webservices.internal.api.message.ContentType;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;

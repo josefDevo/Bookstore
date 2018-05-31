@@ -10,19 +10,19 @@ var ratingList = [];
 
 var xhr = new XMLHttpRequest();
 
-    xhr.onload = function() {
-            if(xhr.status == 200) {
-                responseObject = JSON.parse(xhr.responseText);
-                displayStatistics();
-            }
-        }
+xhr.onload = function () {
+    if (xhr.status == 200) {
+        responseObject = JSON.parse(xhr.responseText);
+        displayStatistics();
+    }
+}
 
-    xhr.open('GET', 'http://localhost:3300/api/ratings', true);
-    xhr.send(null);
+xhr.open('GET', 'http://localhost:3300/api/ratings', true);
+xhr.send(null);
 
-function displayStatistics(){
-    for(var i = 0; i < responseObject.length; i++){
-        if(responseObject[i].bookId == id) {
+function displayStatistics() {
+    for (var i = 0; i < responseObject.length; i++) {
+        if (responseObject[i].bookId == id) {
             ratingList.push(responseObject[i].star);
         }
     }
@@ -32,16 +32,16 @@ function displayStatistics(){
     var fourTimes = 0;
     var fiveTimes = 0;
 
-    for(var i = 0; i < ratingList.length; i++){
-        if(ratingList[i] == 1){
+    for (var i = 0; i < ratingList.length; i++) {
+        if (ratingList[i] == 1) {
             oneTimes++;
         } else if (ratingList[i] == 2) {
             twoTimes++;
-        }else if (ratingList[i] == 3) {
+        } else if (ratingList[i] == 3) {
             threeTimes++;
-        }else if(ratingList[i] == 4) {
+        } else if (ratingList[i] == 4) {
             fourTimes++;
-        }else if(ratingList[i] == 5) {
+        } else if (ratingList[i] == 5) {
             fiveTimes++;
         }
     }
@@ -51,5 +51,5 @@ function displayStatistics(){
     fourStarP.innerHTML = fourTimes;
     fiveStarP.innerHTML = fiveTimes;
     totalRateP.innerHTML = ratingList.length;
-    totalScoreP.innerHTML = (((oneTimes)*1)+((twoTimes)*2)+((threeTimes)*3)+((fourTimes)*4)+((fiveTimes)*5))/ratingList.length;
+    totalScoreP.innerHTML = (((oneTimes) * 1) + ((twoTimes) * 2) + ((threeTimes) * 3) + ((fourTimes) * 4) + ((fiveTimes) * 5)) / ratingList.length;
 }

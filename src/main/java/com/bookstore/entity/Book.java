@@ -1,4 +1,4 @@
-package com.newton.bookstore.entity;
+package com.bookstore.entity;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;

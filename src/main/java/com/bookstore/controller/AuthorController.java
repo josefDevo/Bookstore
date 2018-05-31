@@ -1,8 +1,8 @@
-package com.newton.bookstore.controller;
+package com.bookstore.controller;
 
 
-import com.newton.bookstore.entity.Author;
-import com.newton.bookstore.repository.AuthorRepository;
+import com.bookstore.entity.Author;
+import com.bookstore.repository.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

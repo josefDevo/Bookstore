@@ -1,6 +1,6 @@
-package com.newton.bookstore.repository;
+package com.bookstore.repository;
 
-import com.newton.bookstore.entity.Rating;
+import com.bookstore.entity.Rating;
 import com.oracle.webservices.internal.api.message.ContentType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
